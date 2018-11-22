@@ -23,7 +23,8 @@ var size = {
 var game = new Phaser.Game(size.width, size.height, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
-  game.load.baseURL = 'http://localhost:8080/assets/';
+  // game.load.baseURL = 'http://localhost:8080/assets/';
+  game.load.baseURL = 'assets/';
   game.load.crossOrigin = 'anonymous';
 
   game.load.image('logo', 'logo.png');  
